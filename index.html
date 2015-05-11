@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+
+<title>App Camera</title>
+	
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="cordova.js"></script>
+<script src="index.js"></script>
+</head>
+
+<body>
+
+<div data-role="page">
+<button id="boton" class="ui_btn">Sacar Foto</button>
+<img id="MyImage"/>
+</div>
+
+<script>
+document.addEventListener("deviceready",onDeviceReady,false);
+
+function onDeviceReady(){
+$("#boton").click(function(){
+	sacafoto();
+	})
+}
+</script>
+
+
+
+
+</body>
+</html>
